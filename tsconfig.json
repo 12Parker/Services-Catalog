@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",              // Or higher, e.g., "ES2022" or "ESNext"
+    "module": "CommonJS",           // Or "ESNext" if you prefer
+    "lib": ["ES2020"],              // Include the ES2020 standard library
+    "experimentalDecorators": true, // Enable experimental decorator support
+    "emitDecoratorMetadata": true,  // Emit metadata for reflection APIs
+    "strict": true,                 // Enable strict type checking (optional but recommended)
+    "esModuleInterop": true,        // Enable compatibility with CommonJS modules
+    "skipLibCheck": true,           // Skip type checking of declaration files
+    "outDir": "./dist",             // Output directory for compiled files
+    "rootDir": "./src"              // Root directory of source files
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
