@@ -37,6 +37,7 @@ let ServicesService = class ServicesService {
         return this.servicesRepository.find({
             where,
             order,
+            relations: ['versions'],
             skip: page && limit ? (page - 1) * limit : undefined,
             take: limit,
         });
