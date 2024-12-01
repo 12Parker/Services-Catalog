@@ -56,7 +56,7 @@ let ServicesService = class ServicesService {
             where: { service: { id: serviceId } },
         });
     }
-    // CRUD operations if needed
+    // CRUD operations
     async create(serviceData) {
         const service = this.servicesRepository.create(serviceData);
         return this.servicesRepository.save(service);

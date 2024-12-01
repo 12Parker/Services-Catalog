@@ -59,7 +59,7 @@ export class ServicesService {
     });
   }
 
-  // CRUD operations if needed
+  // CRUD operations
   async create(serviceData: Partial<Service>): Promise<Service> {
     const service = this.servicesRepository.create(serviceData);
     return this.servicesRepository.save(service);
